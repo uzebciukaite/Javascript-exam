@@ -1,0 +1,108 @@
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* Mobile first */
+.wrapper {
+  min-height: 100vh;
+  min-width: calc(100vw - (100vw - 100%));
+  background-color: #fec631;
+}
+
+.headline {
+  padding-top: 100px;
+  font-size: 2.5em;
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+}
+
+form {
+  max-width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#output {
+  display: none;
+  flex-direction: column;
+  max-width: 80%;
+  margin: 50px auto;
+  font-size: 1.1em;
+  background: #f7f7f7;
+  padding: 60px 0;
+}
+
+#output h1 {
+  text-align: center;
+  padding-bottom: 50px;
+}
+#searchDisplay {
+  text-align: center;
+  font-size: 3em;
+  color: #e15930;
+}
+
+#masstypes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.massitem {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  /* border-right: 3px solid black;
+  border-left: 3px solid black; */
+  font-size: 1.1em;
+}
+
+.massitem span {
+  font-size: 2em;
+  color: #e15930;
+}
+#search {
+  width: 65%;
+  margin: 0;
+  padding: 20px;
+  outline: 0;
+  border: 0;
+  font-size: 1.1em;
+}
+
+#submit-btn {
+  width: 35%;
+  background-color: #f7f7f7;
+  border: 0;
+  outline: 0;
+  font-size: 1.1em;
+}
+
+#submit-btn:hover {
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .headline {
+    font-size: 3.5em;
+  }
+
+  #search,
+  #submit-btn,
+  #output {
+    font-size: 2em;
+  }
+  span {
+    font-size: 3em;
+  }
+}

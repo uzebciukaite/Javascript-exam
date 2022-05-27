@@ -1,0 +1,95 @@
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* Mobile first */
+.wrapper {
+  min-height: 100vh;
+  min-width: calc(100vw - (100vw - 100%));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container h1 {
+  margin-top: 50px;
+  color: #333;
+}
+
+#output {
+  margin: 50px auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.carBrand {
+  background: #6d8b74;
+  color: #efead8;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  font-size: 1.5em;
+  border-radius: 20px 0 20px 0;
+}
+
+.expandList {
+  background: #5f7161;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  border-radius: 20px 0 20px 0;
+}
+.expandList:hover {
+  cursor: pointer;
+  background: #333;
+  border-radius: 20px 0 0 0;
+}
+
+.expandListToggle {
+  border-radius: 0;
+  background-color: #333;
+}
+
+.carModels {
+  background: #d0c9c0;
+  border-radius: 0 0 20px 0;
+  display: none;
+  flex-direction: column;
+  text-align: justify;
+  line-height: 30px;
+  padding: 20px;
+}
+
+.carModelsToggle {
+  display: flex;
+}
+
+.carModels p {
+  font-size: 1.2em;
+  padding: 10px;
+  margin-left: 50px;
+}
+
+.rotateIcon {
+  transform: rotate(180deg);
+}
